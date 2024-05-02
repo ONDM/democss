@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo CSS</title>
+  <link rel="stylesheet" href="/democss/style.css">
+  <link rel="icon" type="icon" href="/democss/favicon.png">
+  <link rel="manifest" href="/democss/manifest.json">
+  <script src="/democss/service-worker.js"></script>
+</head>
+<body>
+  <a href="https://ondm.github.io/prehled">
+  <img src="/democss/logo.png" alt="Image" id="logoimage" title="Přesměrování na stránku: Přehled příkazů HTML, CSS, JS">
+  </a>
+  <div class="container">
+    <div class="commands">
+      <div class="command">
+        <div id="opacity">Průhlednost: </div>
+        <input type="text" class="input opacity-input" id="opacityInput" value="filter: opacity(100%);">
+      </div>
+      <div class="command">
+        <div id="brightness">Jas: </div>
+        <input type="text" class="input brightness-input" id="brightnessInput" value="filter: brightness(100%);">
+      </div>
+      <div class="command">
+        <div id="blur">Rozostření: </div>
+        <input type="text" class="input blur-input" id="blurInput" value="filter: blur(0px);">
+      </div>
+      <div class="command">
+        <div id="contrast">Kontrast: </div>
+        <input type="text" class="input contrast-input" id="contrastInput" value="filter: contrast(100%);">
+      </div>
+      <div class="command">
+        <div id="hue">Rotace odstínů: </div>
+        <input type="text" class="input hue-input" id="hueInput" value="filter: hue-rotate(0deg);">
+      </div>
+      <div class="command">
+        <div id="invert">Inverze barvy: </div>
+        <input type="text" class="input invert-input" id="invertInput" value="filter: invert(0%);">
+      </div>
+      <br>
+      <div class="command">
+        <div id="rotate">Rotace obrázku: </div>
+        <input type="text" class="input rotate-input" id="rotateInput" value="transform: rotate(0deg);">
+      </div>
+      <div class="command">
+        <div id="rotatex">Horizontální Rotace obrázku: </div>
+        <input type="text" class="input rotatex-input" id="rotatexInput" value="transform: rotateX(0deg);">
+      </div>
+      <div class="command">
+        <div id="rotatey">Vertikální Rotace obrázku: </div>
+        <input type="text" class="input rotatey-input" id="rotateyInput" value="transform: rotateY(0deg);">
+      </div>
+      <div class="command">
+        <div id="scale">Zvětšení / zmenšení: </div>
+        <input type="text" class="input scale-input" id="scaleInput" value="transform: scale(0.9);">
+      </div>
+      <div class="command">
+        <div id="translate">Pohyblivost (x, y): </div>
+        <input type="text" class="input translate-input" id="translateInput" value="transform: translate(0px, 0px);">
+      </div>
+    </div>
+    <div class="logo-container">
+      <img src="/democss/logoc.png" alt="Logo" class="logo" id="logo">
+      <img src="/democss/logoc.png" alt="Logo" class="shadow" id="shadow">
+    </div>
+  </div>
+  <div class="text-insp">
+    Inspirace z: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a>
+  </div>
+  <button id="resetbtn" onclick="resetbtn()">RESET<br>HODNOT</button>
+  <div class="notsup">Rozvržení stránky<br>není určeno<br>pro mobilní telefony</div>
+  <div class="nav">Kliknutím na logo proběhne přesměrování na stránku:<br>Přehled příkazů HTML, CSS, JS</div>
+  <script src="/democss/script.js"></script>
+</body>
+</html>
