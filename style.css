@@ -1,0 +1,324 @@
+body
+{
+  font-family: 'font', Arial, sans-serif;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+@font-face
+{
+  font-family: 'font';
+  src: url('/democss/font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.commands
+{
+  font-family: 'font', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.command
+{
+  font-family: 'font', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.input
+{
+  font-family: 'font', Arial, sans-serif;
+  height: 50px;
+  width: 270px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #141414;
+  color: #d6d6d6;
+  border: 1px solid #303030;
+  transform: translate(-250px, 6px);
+}
+
+.logo-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo
+{
+  width: 200px;
+  height: auto;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: fixed;
+  top: 250px;
+  left: 983px;
+  transform: translate(0, 0);
+  z-index: 1;
+}
+
+.shadow
+{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 233px;
+  left: 70px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  display: none;
+  transform: translate(0, 0);
+}
+
+.text-insp
+{
+  font-family: 'font', Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  color: #707070;
+}
+
+.text-insp a
+{
+  color: #b0b0b0;
+}
+
+.text-insp a:active
+{
+  color: #ffffff;
+}
+
+#logoimage
+{
+  position: fixed;
+  top: -10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  opacity: 0.1;
+}
+
+#resetbtn
+{
+  z-index: 0;
+  position: absolute;
+  top: -137.5px;
+  left: 680px;
+  font-family: 'font', Arial, sans-serif;
+  display: block;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(44, 44, 44, 0.2);
+  color: #d6d6d6;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 40px;
+  transform: translate(0px, 150px);
+}
+
+#resetbtn:hover
+{
+  background-color: rgb(41, 41, 41, 0.8)
+}
+
+#opacity, #brightness, #blur, #contrast, #hue, #invert, #rotate, #rotatex, #rotatey, #scale, #translate
+{
+  color: #8f8f8f;
+  font-size: 18px;
+  z-index: 0;
+  position: absolute;
+}
+
+#opacity
+{
+  top: 37px;
+  left: 231px;
+}
+
+#brightness
+{
+  top: 97px;
+  left: 299px;
+}
+
+#blur
+{
+  top: 157px;
+  left: 240px;
+}
+
+#contrast
+{
+  top: 217px;
+  left: 260px;
+}
+
+#hue
+{
+  top: 277px;
+  left: 206px;
+}
+
+#invert
+{
+  top: 337px;
+  left: 219px;
+}
+
+#rotate
+{
+  top: 415px;
+  left: 200px;
+}
+
+#rotatex
+{
+  top: 475px;
+  left: 98px;
+}
+
+#rotatey
+{
+  top: 535px;
+  left: 119px;
+}
+
+#scale
+{
+  top: 595px;
+  left: 162px;
+}
+
+#translate
+{
+  top: 655px;
+  left: 187px;
+}
+
+.notsup
+{
+  z-index: 0;
+  position: absolute;
+  top: -100000000000px;
+  color: #141414;
+}
+
+.nav
+{
+  z-index: 0;
+  position: absolute;
+  top: -100000000000px;
+  color: #141414;
+}
+
+@media only screen and (max-width: 1300px)
+{
+  body
+  {
+    background-color: #141414;
+    height: 10000000000000000vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #opacity, #brightness, #blur, #contrast, #hue, #invert, #rotate, #rotatex, #rotatey, #scale, #translate
+  {
+    color: #141414;
+    font-size: 0px;
+    top: -100000000000000000000px;
+  }
+
+  #resetbtn
+  {
+    top: -100000000000000000000px;
+  }
+
+  #logoimage
+  {
+    top: -100000000000000000000px;
+  }
+
+  .text-insp
+  {
+    top: -100000000000000000000px;
+  }
+
+  .logo
+  {
+    top: -100000000000000000000px;
+  }
+
+  .shadow
+  {
+    top: -100000000000000000000px;
+  }
+
+  .input
+  {
+    left: -100000000000000000000px;
+  }
+
+  .commands
+  {
+  left: -100000000000000000000px;
+  }
+
+  .command
+  {
+    left: -100000000000000000000px;
+  }
+
+  .notsup
+  {
+    font-family: 'font', Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    color: #c3c1c1;
+    font-size: 20px;
+  }
+
+  #logoimage
+  {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav
+  {
+    font-family: 'font', Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    color: #c3c1c1;
+    font-size: 10px;
+  }
+}
